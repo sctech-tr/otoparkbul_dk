@@ -12,18 +12,18 @@ const char* sunucuURL = "http://x:3000";
 const char* apiKey = "x"; // değiştirin
 
 // Sensör sayısı
-const int TOPLAM_PARK = 5;
+const int TOPLAM_PARK = 4;
 
 // Sensör pinleri
 // not: deneyap kart'ta
 // D0, D1, D4, D9, D12, D13, D14, D15, A4, A5
 // pinleri sorunsuz kullanılabilir.
 // yani toplam 5 park yeri için pin var.
-// D0 ve D1'den emin değilim
-const int trigPinleri[TOPLAM_PARK] = {D13, D0, D4, D12, A4};
-const int echoPinleri[TOPLAM_PARK] = {D14, D1, D9, D15, A5};
+// A4 ve A5'ten emin değilim
+const int trigPinleri[TOPLAM_PARK] = {D13, D0, D4, D12};
+const int echoPinleri[TOPLAM_PARK] = {D14, D1, D9, D15};
 
-bool parkDurumlari[TOPLAM_PARK] = {false, false, false, false, false};
+bool parkDurumlari[TOPLAM_PARK] = {false, false, false, false};
 
 // Araç algılama mesafesi
 const int esikMesafe = 20;
